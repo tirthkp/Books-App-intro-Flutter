@@ -102,14 +102,15 @@ class IntroPage extends StatelessWidget {
                 effect: const WormEffect(
                   dotColor: Colors.white30,
                   activeDotColor: Colors.white,
-                  dotHeight: 10,
-                  dotWidth: 10,
+                  dotHeight: 5,
+                  dotWidth: 25,
                   type: WormType.thin,
+                  spacing: 12,
                 ),
               ),
               Image.asset(
                 'images/1.png',
-                height: 470,
+                height: 450,
                 width: double.infinity,
                 fit: BoxFit.fitHeight,
               ),
@@ -122,13 +123,20 @@ class IntroPage extends StatelessWidget {
         child: Container(
           height: 50,
           width: 50,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(30),
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(255, 33, 255, 203),
+                blurRadius: 15,
+                spreadRadius: 5,
+              ),
+            ],
           ),
-          child: Icon(
+          child: const Icon(
             Icons.arrow_forward_ios_outlined,
-            color: Colors.blue[600],
+            color: Colors.teal,
           ),
         ),
       ),
