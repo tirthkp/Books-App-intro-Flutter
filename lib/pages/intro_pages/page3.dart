@@ -12,62 +12,34 @@ class Page3 extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'OUR',
-                  style: GoogleFonts.robotoMono(
-                    letterSpacing: 2,
-                    decoration: TextDecoration.lineThrough,
-                    fontSize: 20,
-                    color: Colors.white70,
-                  ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'YOUR BOOKS',
-                  style: GoogleFonts.robotoMono(
-                    letterSpacing: 2,
-                    fontSize: 20,
-                    color: Colors.white70,
-                  ),
-                ),
-              ],
+            child: Text(
+              'So what are you waiting for?',
+              style: GoogleFonts.robotoMono(
+                fontSize: 20,
+                color: Colors.white70,
+              ),
             ),
           ),
           const SizedBox(
             height: 25,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Become the best ',
-                style: GoogleFonts.robotoMono(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                'in your',
-                style: GoogleFonts.robotoMono(
-                  color: Colors.white70,
-                  fontSize: 20,
-                  // fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
+          Text(
+            'Join us today!',
+            style: GoogleFonts.robotoMono(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(
+            height: 25,
           ),
           Center(
             child: Text(
-              'industry,One class at a time ',
+              'Make your skills more accurate',
               style: GoogleFonts.robotoMono(
                 color: Colors.white70,
-                fontSize: 22,
+                fontSize: 20,
               ),
             ),
           ),
@@ -75,19 +47,13 @@ class Page3 extends StatelessWidget {
           //   height: 25,
           // ),
           Text(
-            'Learn new professions from the',
+            'and grow in the industry',
             style: GoogleFonts.robotoMono(
               color: Colors.white70,
               fontSize: 18,
             ),
           ),
-          Text(
-            'comfort of your home or anywhere',
-            style: GoogleFonts.robotoMono(
-              color: Colors.white70,
-              fontSize: 18,
-            ),
-          ),
+
           Image.asset(
             'images/3.png',
             height: 450,

@@ -14,30 +14,13 @@ class Page2 extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'OUR',
-                    style: GoogleFonts.robotoMono(
-                      letterSpacing: 2,
-                      decoration: TextDecoration.lineThrough,
-                      fontSize: 20,
-                      color: Colors.white70,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'YOUR BOOKS',
-                    style: GoogleFonts.robotoMono(
-                      letterSpacing: 2,
-                      fontSize: 20,
-                      color: Colors.white70,
-                    ),
-                  ),
-                ],
+              child: Text(
+                'Books For Everyone',
+                style: GoogleFonts.robotoMono(
+                  letterSpacing: 2,
+                  fontSize: 20,
+                  color: Colors.white70,
+                ),
               ),
             ),
             const SizedBox(
@@ -47,7 +30,7 @@ class Page2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Become the best ',
+                  'Millions of books ',
                   style: GoogleFonts.robotoMono(
                     color: Colors.white,
                     fontSize: 20,
@@ -55,7 +38,7 @@ class Page2 extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'in your',
+                  'are available',
                   style: GoogleFonts.robotoMono(
                     color: Colors.white70,
                     fontSize: 20,
@@ -66,7 +49,7 @@ class Page2 extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'industry,One class at a time ',
+                'for free of cost ',
                 style: GoogleFonts.robotoMono(
                   color: Colors.white70,
                   fontSize: 22,
@@ -77,14 +60,14 @@ class Page2 extends StatelessWidget {
               height: 25,
             ),
             Text(
-              'Learn new professions from the',
+              'Whichever in the field you are',
               style: GoogleFonts.robotoMono(
                 color: Colors.white70,
                 fontSize: 18,
               ),
             ),
             Text(
-              'comfort of your home or anywhere',
+              'you will get all kinds of books',
               style: GoogleFonts.robotoMono(
                 color: Colors.white70,
                 fontSize: 18,
