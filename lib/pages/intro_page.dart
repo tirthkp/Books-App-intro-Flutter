@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'home_page.dart';
+import 'login_page.dart';
 import 'intro_pages/page1.dart';
 import 'intro_pages/page2.dart';
 import 'intro_pages/page3.dart';
