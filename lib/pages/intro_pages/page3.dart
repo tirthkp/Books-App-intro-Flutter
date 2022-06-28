@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
+class Page3 extends StatelessWidget {
+  const Page3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -71,9 +71,9 @@ class Page2 extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 25,
-          ),
+          // const SizedBox(
+          //   height: 25,
+          // ),
           Text(
             'Learn new professions from the',
             style: GoogleFonts.robotoMono(
@@ -88,12 +88,9 @@ class Page2 extends StatelessWidget {
               fontSize: 18,
             ),
           ),
-          const SizedBox(
-            height: 20,
-          ),
           Image.asset(
-            'images/2.png',
-            height: 480,
+            'images/3.png',
+            height: 450,
             width: double.infinity,
             fit: BoxFit.fitHeight,
           ),
