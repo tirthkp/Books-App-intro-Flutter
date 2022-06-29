@@ -1,6 +1,7 @@
 import 'package:books_app/utils/textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:social_auth_buttons/social_auth_buttons.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -49,14 +50,6 @@ class LoginPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                // Text(
-                //   'Username',
-                //   style: GoogleFonts.robotoMono(
-                //     color: Colors.teal,
-                //     fontWeight: FontWeight.bold,
-                //     fontSize: 18,
-                //   ),
-                // ),
                 const SizedBox(
                   height: 15,
                 ),
@@ -72,6 +65,102 @@ class LoginPage extends StatelessWidget {
                   name: 'Password',
                   preicon: Icons.lock,
                   obscureText: true,
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                      height: 50,
+                      width: 150,
+                      child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.white),
+                          elevation: MaterialStateProperty.all(0),
+                          shape: MaterialStateProperty.all(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              side: const BorderSide(
+                                color: Colors.teal,
+                              ),
+                            ),
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Text(
+                          'Login',
+                          style: GoogleFonts.robotoMono(
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50,
+                      width: 150,
+                      child: ElevatedButton(
+                        style: ButtonStyle(
+                          elevation: MaterialStateProperty.all(0),
+                          shape: MaterialStateProperty.all(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Text(
+                          'SignUp',
+                          style: GoogleFonts.robotoMono(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Text(
+                    'Or continue with',
+                    style: GoogleFonts.robotoMono(
+                      color: Colors.teal[600],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    GoogleAuthButton(
+                      elevation: 0,
+                      onPressed: () {},
+                      style: AuthButtonStyle.icon,
+                      borderColor: Colors.teal,
+                    ),
+                    AppleAuthButton(
+                      elevation: 0,
+                      onPressed: () {},
+                      style: AuthButtonStyle.icon,
+                      borderColor: Colors.teal,
+                    ),
+                    FacebookAuthButton(
+                      elevation: 0,
+                      buttonColor: Colors.white,
+                      onPressed: () {},
+                      style: AuthButtonStyle.icon,
+                      borderColor: Colors.teal,
+                    ),
+                  ],
                 ),
               ],
             ),
