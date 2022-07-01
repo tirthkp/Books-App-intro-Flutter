@@ -99,6 +99,11 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Container(
+                      width: 1,
+                      height: 50,
+                      color: Colors.teal,
+                    ),
                     SizedBox(
                       height: 50,
                       width: 150,
