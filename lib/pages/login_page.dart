@@ -1,3 +1,4 @@
+import 'package:books_app/pages/homepage.dart';
 import 'package:books_app/utils/textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -90,7 +91,13 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomePage(),
+                              ));
+                        },
                         child: Text(
                           'Login',
                           style: GoogleFonts.robotoMono(
