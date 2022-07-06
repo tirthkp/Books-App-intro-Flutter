@@ -1,4 +1,4 @@
-import 'package:books_app/pages/homepage.dart';
+import 'package:books_app/utils/bottom_navbar.dart';
 import 'package:books_app/utils/textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -95,7 +95,7 @@ class LoginPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomePage(),
+                                builder: (context) => const MyNavbar(),
                               ));
                         },
                         child: Text(

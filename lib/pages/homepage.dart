@@ -46,89 +46,55 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  'Search your favourite book here...',
-                  style: GoogleFonts.roboto(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
+      body: Center(
+        child: SingleChildScrollView(
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 200,
                   ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.teal,
-                      ),
-                      borderRadius: BorderRadius.circular(30),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Popular',
+                    style: GoogleFonts.roboto(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
                     ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Search for books...',
-                        hintStyle: GoogleFonts.robotoMono(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: const [
+                        BookTile(
+                          no: 1,
                         ),
-                        prefixIcon:
-                            const Icon(Icons.search, color: Colors.teal),
-                      ),
-                      cursorHeight: 20,
+                        BookTile(
+                          no: 2,
+                        ),
+                        BookTile(
+                          no: 5,
+                        ),
+                        BookTile(
+                          no: 4,
+                        ),
+                        BookTile(
+                          no: 3,
+                        ),
+                      ],
                     ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Popular',
-                  style: GoogleFonts.roboto(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                SizedBox(
-                  height: 200,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: const [
-                      BookTile(
-                        no: 1,
-                      ),
-                      BookTile(
-                        no: 2,
-                      ),
-                      BookTile(
-                        no: 5,
-                      ),
-                      BookTile(
-                        no: 4,
-                      ),
-                      BookTile(
-                        no: 3,
-                      ),
-                    ],
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
         ),

@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^3.0.1
   smooth_page_indicator: ^1.0.0+2
   social_auth_buttons: ^2.0.0
+  carousel_slider: ^4.1.1
   
   
 
